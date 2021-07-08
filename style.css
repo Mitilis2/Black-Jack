@@ -1,0 +1,63 @@
+:root {
+  --player-one: red;
+  --player-two: black;
+  --font-color: white;
+  --win-message: darkblue;
+  --background: lightgray;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--background);
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+h1,
+.count {
+  font-size: 2.5rem;
+  margin-left: 5.5rem;
+}
+.hit-btn,
+.hold-btn,
+.reset-btn {
+  font-size: large;
+  width: 10rem;
+  margin: 0 0 0.5rem 5.5rem;
+  display: block;
+}
+.count {
+  font-size: 2rem;
+}
+.player-one {
+  background-color: black;
+  width: 20rem;
+  padding-bottom: 1.7rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  box-shadow: -1.3rem 1.3rem blueviolet;
+  border-radius: 1.5rem;
+}
+.player-two {
+  background-color: red;
+  width: 20rem;
+  padding-bottom: 1.7rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  box-shadow: 1.3rem 1.3rem blue;
+  border-radius: 1.5rem;
+}
+.deck-img {
+  display: block;
+  width: 200px;
+  margin-left: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 1.5rem;
+}
+/* .hidden {
+  display: none;
+*/
