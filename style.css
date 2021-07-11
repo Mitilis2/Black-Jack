@@ -1,9 +1,9 @@
 :root {
-  --player-one: red;
-  --player-two: black;
-  --font-color: white;
-  --win-message: darkblue;
-  --background: lightgray;
+  --player-one: hsl(0, 100%, 50%);
+  --player-two: hsl(0, 0%, 0%);
+  --font-color: hsl(0, 0%, 100%);
+  --win-message: hsl(240, 100%, 27%);
+  --background: hsl(0, 0%, 83%);
 }
 * {
   box-sizing: border-box;
@@ -12,11 +12,15 @@
 }
 body {
   background: var(--background);
-  color: white;
-  display: flex;
-  justify-content: center;
+  color: var(--font-color);
 }
-
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10%;
+  margin-left: 10%;
+}
 h1,
 .count {
   font-size: 2.5rem;
@@ -30,33 +34,53 @@ h1,
   margin: 0 0 0.5rem 5.5rem;
   display: block;
 }
+.hit-btn,
+.hold-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin: 5rem 0 0 5rem;
+  color: hsl(0, 100%, 50%);
+  background: hsl(210, 14%, 53%);
+}
+.hit-btn:hover,
+.hold-btn:hover {
+  background: hsl(210, 14%, 23%);
+}
 .count {
   font-size: 2rem;
 }
-.player-one {
-  background-color: black;
+.player {
   width: 20rem;
   padding-bottom: 1.7rem;
-  margin-top: 1rem;
   margin-left: 1rem;
-  box-shadow: -1.3rem 1.3rem blueviolet;
+
   border-radius: 1.5rem;
 }
+.player-one {
+  background-color: var(--player-one);
+  box-shadow: -1.3rem 1.3rem hsl(271, 76%, 53%);
+}
 .player-two {
-  background-color: red;
-  width: 20rem;
-  padding-bottom: 1.7rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
-  box-shadow: 1.3rem 1.3rem blue;
-  border-radius: 1.5rem;
+  background-color: var(--player-two);
+  box-shadow: 1.3rem 1.3rem hsl(240, 100%, 50%);
 }
 .deck-img {
   display: block;
-  width: 200px;
+  width: 20rem;
   margin-left: 1.5rem;
   margin-right: 0.5rem;
   border-radius: 1.5rem;
+}
+.reset-btn {
+  font-size: 2.5rem;
+  background: hsl(120, 100%, 25%);
+  color: var(--font-color);
+  margin-top: 50%;
+  border-radius: 25px;
+}
+.reset-btn:hover {
+  color: hsl(120, 100%, 50%);
 }
 /* .hidden {
   display: none;
