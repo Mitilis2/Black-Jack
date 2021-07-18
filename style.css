@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
 :root {
   --player-one: hsl(0, 100%, 50%);
   --player-two: hsl(0, 0%, 0%);
@@ -11,19 +13,20 @@
   padding: 0;
 }
 body {
+  font-family: "Architects Daughter", sans-serif;
   background: var(--background);
   color: var(--font-color);
 }
 .title {
   margin-left: 30rem;
-  margin-top: 5%;
+  margin-top: %;
   color: hsl(0, 0%, 0%);
 }
 .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 10%;
 }
 .player-number,
@@ -34,6 +37,7 @@ body {
 .hit-btn,
 .hold-btn,
 .reset-btn {
+  font-family: "Architects Daughter", sans-serif;
   font-size: large;
   width: 10rem;
   margin: 0 0 0.5rem 5.5rem;
@@ -59,7 +63,6 @@ body {
   width: 20rem;
   padding-bottom: 1.7rem;
   margin-left: 1rem;
-
   border-radius: 1.5rem;
 }
 .player-one {
@@ -69,6 +72,9 @@ body {
 .player-two {
   background-color: var(--player-two);
   box-shadow: 1.3rem 1.3rem hsl(240, 100%, 50%);
+}
+.player-active {
+  opacity: 0.7;
 }
 .deck-img {
   display: block;
@@ -89,11 +95,14 @@ body {
 }
 .winner-message {
   margin-left: 34.5rem;
-  margin-top: 0.75rem;
   color: hsl(39, 40%, 20%);
 }
 h2 {
-  margin-left: 5rem;
+  margin-left: 2rem;
+  color: white;
+}
+
+h1 {
 }
 .hidden {
   display: none;
