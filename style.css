@@ -19,7 +19,6 @@ body {
 }
 .title {
   margin-left: 30rem;
-  margin-top: %;
   color: hsl(0, 0%, 0%);
 }
 .wrapper {
@@ -65,18 +64,18 @@ body {
   margin-left: 1rem;
   border-radius: 1.5rem;
 }
-.player-one {
+#player-one {
   background-color: var(--player-one);
   box-shadow: -1.3rem 1.3rem hsl(271, 76%, 53%);
 }
-.player-two {
+#player-two {
   background-color: var(--player-two);
   box-shadow: 1.3rem 1.3rem hsl(240, 100%, 50%);
 }
 .player-active {
   opacity: 0.7;
 }
-.deck-img {
+#deck-img {
   display: block;
   width: 20rem;
   margin-left: 1.5rem;
@@ -101,8 +100,11 @@ h2 {
   margin-left: 2rem;
   color: white;
 }
-
-h1 {
+.message {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: red;
+  margin-left: 34.5rem;
 }
 .hidden {
   display: none;
